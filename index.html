@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cauldoku — a potion logic puzzle</title>
+<meta name="description" content="Cauldoku — a logic puzzle in an alchemist's shop: customers describe a potion, you deduce the recipe. Every order has exactly one answer. Free on Android, with ads.">
+<link rel="icon" href="cauldoku.png">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fbf7ee;
+    --panel: #ffffff;
+    --ink: #2b2118;
+    --muted: #6b5d4f;
+    --line: #e2d8c6;
+    --accent: #3e234f;
+    --accent-ink: #fbf7ee;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1b1612;
+      --panel: #261f19;
+      --ink: #efe6d6;
+      --muted: #b3a48f;
+      --line: #3c3229;
+      --accent: #f2b84b;
+      --accent-ink: #1b1612;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 48px 16px 64px;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 36rem; margin: 0 auto; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 28px; }
+  header img {
+    width: 64px; height: 64px; border-radius: 14px; display: block;
+    box-shadow: 0 2px 10px rgb(0 0 0 / .18);
+  }
+  h1 { font-size: 1.75rem; line-height: 1.2; margin: 0 0 2px; letter-spacing: -.02em; }
+  .tagline { color: var(--muted); margin: 0; }
+  h2 {
+    font-size: .8rem; text-transform: uppercase; letter-spacing: .08em;
+    color: var(--muted); margin: 32px 0 10px; font-weight: 600;
+  }
+  p { margin: 0 0 14px; }
+  .panel {
+    background: var(--panel); border: 1px solid var(--line);
+    border-radius: 14px; padding: 18px 20px;
+  }
+  ul { margin: 0; padding: 0; list-style: none; }
+  ul li { padding: 9px 0; border-top: 1px solid var(--line); }
+  ul li:first-child { border-top: 0; padding-top: 0; }
+  ul li:last-child { padding-bottom: 0; }
+  ul strong { display: block; font-weight: 600; }
+  ul span { color: var(--muted); font-size: .94rem; }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
+  .links a {
+    display: inline-block; padding: 9px 16px; border-radius: 999px;
+    border: 1px solid var(--line); background: var(--panel);
+    text-decoration: none; font-weight: 500;
+  }
+  .links a.primary {
+    background: var(--accent); border-color: var(--accent); color: var(--accent-ink);
+  }
+  footer {
+    margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--line);
+    color: var(--muted); font-size: .9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <header>
+    <img src="cauldoku.png" alt="" width="64" height="64">
+    <div>
+      <h1>Cauldoku</h1>
+      <p class="tagline">A potion logic puzzle in an alchemist's shop.</p>
+    </div>
+  </header>
+
+  <p>Your master, the alchemist Orrin, has vanished, and his shop is yours to
+  keep. Customers never name ingredients: they describe the potion they need,
+  and you work out the recipe by the rules of alchemy, brew it and sell it.
+  Every order has exactly one answer, reached by reasoning, never by
+  guessing.</p>
+
+  <h2>What is in it</h2>
+  <div class="panel">
+    <ul>
+      <li>
+        <strong>A story to solve</strong>
+        <span>Six chapters and thirty-six days on the road after your master,
+        twenty-two customers with their own portraits, and watercolour scenes
+        for every evening.</span>
+      </li>
+      <li>
+        <strong>Rules that change how you think</strong>
+        <span>Ingredients fuse into new potions, which become ingredients in
+        turn — all the way to the Philosopher's Stone.</span>
+      </li>
+      <li>
+        <strong>A shop of your own</strong>
+        <span>A pedlar, a pantry, workshop upgrades, a Book of Potions and a
+        journal of what you learn.</span>
+      </li>
+      <li>
+        <strong>After the Stone</strong>
+        <span>The shop goes on: master's orders, the hardest recipes, and
+        mastery ranks from Apprentice to Sage.</span>
+      </li>
+      <li>
+        <strong>Calm and fair</strong>
+        <span>No timer that makes you lose, no energy, no paywalls; three free
+        hints a day.</span>
+      </li>
+    </ul>
+  </div>
+
+  <h2>What stays on your device</h2>
+  <div class="panel">
+    <p>No account and no server of ours. Puzzles are generated on your device
+    and your progress stays there; the game's own code makes no network
+    requests.</p>
+    <p><strong>The Android game shows ads</strong> from the Yandex Advertising
+    Network: a banner below the shelf, a full-screen ad between days now and
+    then, and videos only when you tap a button for a reward. The ad software
+    uses the internet and, only if you allow it, your advertising ID; you can
+    change that in Settings → Advertising.</p>
+    <div class="links">
+      <a class="primary" href="privacy/">Privacy policy</a>
+      <a href="privacy/#ru">По-русски</a>
+    </div>
+  </div>
+
+  <h2>Languages</h2>
+  <p>English, Русский.</p>
+
+  <footer>
+    Contact: <a href="mailto:amaldavanau@gmail.com">amaldavanau@gmail.com</a>
+  </footer>
+
+</main>
+</body>
+</html>
