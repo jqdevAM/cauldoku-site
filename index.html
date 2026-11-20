@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cauldoku — a potion logic puzzle</title>
-<meta name="description" content="Cauldoku — a logic puzzle in an alchemist's shop: customers describe a potion, you deduce the recipe. Every order has exactly one answer. Free on Android, with ads.">
+<meta name="description" content="Cauldoku — a logic grid of potions in an alchemist's shop: every row and column is a customer's potion, and the answer is where they cross. Every grid has exactly one answer. Free on Android, with ads.">
 <link rel="icon" href="cauldoku.png">
 <style>
   :root {
@@ -83,19 +83,27 @@
     <img src="cauldoku.png" alt="" width="64" height="64">
     <div>
       <h1>Cauldoku</h1>
-      <p class="tagline">A potion logic puzzle in an alchemist's shop.</p>
+      <p class="tagline">A logic grid of potions in an alchemist's shop.</p>
     </div>
   </header>
 
   <p>Your master, the alchemist Orrin, has vanished, and his shop is yours to
-  keep. Customers never name ingredients: they describe the potion they need,
-  and you work out the recipe by the rules of alchemy, brew it and sell it.
-  Every order has exactly one answer, reached by reasoning, never by
-  guessing.</p>
+  keep. The cauldron is a grid: every row and every column is one customer's
+  potion, brewed from the ingredients in that line, and each ingredient goes
+  in once. Customers never name ingredients — they describe the potion they
+  want — so no request alone says where anything goes: the answer is where
+  they cross, as in sudoku. Every grid has exactly one answer, reached by
+  reasoning, never by guessing.</p>
 
   <h2>What is in it</h2>
   <div class="panel">
     <ul>
+      <li>
+        <strong>A grid, not a guess</strong>
+        <span>Four customers on a 2×2 grid to begin with, then six on a 3×3
+        one. A hint is the next step of reasoning, said in words; every
+        ingredient and every request carries the same symbols.</span>
+      </li>
       <li>
         <strong>A story to solve</strong>
         <span>Six chapters and thirty-six days on the road after your master,
@@ -114,7 +122,7 @@
       </li>
       <li>
         <strong>After the Stone</strong>
-        <span>The shop goes on: master's orders, the hardest recipes, and
+        <span>The shop goes on: master's orders, the hardest grids, and
         mastery ranks from Apprentice to Sage.</span>
       </li>
       <li>
